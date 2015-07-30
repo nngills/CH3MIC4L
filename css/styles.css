@@ -1,6 +1,16 @@
 @font-face{
 	font-family: "Raleway";
-	src:url(fonts/Raleway-Regular.ttf)
+	src:url(Raleway-Regular.ttf)
+}
+
+@font-face{
+	font-family: "RalewayBold";
+	src:url(Raleway-Bold.ttf)
+}
+
+@font-face{
+	font-family: "RalewayMed";
+	src:url(Raleway-Medium.ttf)
 }
 
 body{
@@ -15,6 +25,14 @@ body{
 	position: fixed;
 	top: 0px;
 	z-index: 100; 
+}
+
+h2, h3{
+	font-family: "RalewayBold";
+}
+
+dt{
+	font-family: "RalewayMed";
 }
 
 .blue h2{
@@ -129,7 +147,7 @@ p ~ h2{
 
 /*-----CONTACT US-----*/
 dt{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-transform: uppercase;
 	font-weight: 600;
 }
