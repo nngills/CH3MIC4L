@@ -1,0 +1,492 @@
+@font-face{
+	font-family: "Raleway";
+	src:url(fonts/Raleway-Regular.ttf)
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Raleway";
+}
+
+#line{
+	border-bottom: 3px solid #000;
+	width: 0px;
+	position: fixed;
+	top: 0px;
+	z-index: 100; 
+}
+
+.blue h2{
+	color: #00aeef;
+}
+
+.blue #line{
+	border-bottom: 3px solid #00aeef;
+}
+
+.pink h2{
+	color: #ee2a7b;
+}
+
+.pink #line{
+	border-bottom: 3px solid #ee2a7b;
+}
+
+.purple h2{
+	color: #7f3f98;
+}
+
+.purple #line{
+	border-bottom: 3px solid #7f3f98;
+}
+
+#container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*------HEADER------*/
+header{
+	margin: 30px 0 50px 0;
+}
+
+header h1{
+	display: none;
+}
+
+header img{
+	width: 60%;
+	margin-left: 20%;
+}
+
+/*-----NAV-----*/
+aside{
+	width: 200px;
+	float: left;
+	position: fixed;
+}
+
+nav ul{
+	margin-top: 0px;
+	list-style: none;
+}
+
+nav li{
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+nav a{
+	text-decoration: none;
+	color: #ee2a7b;
+	background-color: #fff;
+	padding: 7px 0;
+	transition: all 0.2s;
+}
+
+/*-----ANCHORS-----*/
+nav li:hover{
+	background-size: 16px;
+	background-image: url(../images/logo-small.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+nav a:hover{
+	margin-left: 18px;
+}
+
+a:active{
+	color: #A50D4C;
+}
+
+/*-----CONTENT-----*/
+main{
+	width: 800px;
+	float: right;
+	margin-bottom: 100px;
+}
+
+main h2{
+	text-transform: uppercase;
+	color: #000;
+	margin: 0 0 25px;
+}
+
+main p{
+	line-height: 1.5em;
+}
+
+p ~ h2{
+	margin-top: 50px;
+}
+
+/*-----ABOUT-----*/
+#about img{
+	width: 100%;
+}
+
+/*-----CONTACT US-----*/
+dt{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+dd{
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
+/*-----MEMBERS-----*/
+#members h2{
+	margin-bottom: 5px;
+}
+
+#members em{
+	display: block;
+	margin-bottom: 20px!important;
+}
+
+#members h3{
+	font-size: 2em;
+	margin-bottom: 10px;
+	display: inline;
+}
+
+#members p{
+	margin: 0px;
+}
+
+#members article{
+	padding-left: 280px;
+	position: relative;
+	min-height: 240px;
+	margin-bottom: 100px;
+}
+
+#members article:last-child{
+	margin-bottom: 50px;
+}
+
+#silverCrownFail img, #goldCrownFail img{
+	position: static!important;
+	height: 16px;
+}
+
+#members article img{
+	max-height: 100px;
+	max-width: 300px;
+	position: absolute;
+	bottom: 10px;
+}
+
+canvas{
+	display: inline;
+	height: 16px;
+}
+
+#HaramuraNodoka{
+	background-size: contain;
+	background-image:url(../images/HaramuraNodoka.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#Remilia{
+	background-size: contain;
+	background-image:url(../images/Remilia.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#Kaguyahime{
+	background-size: contain;
+	background-image:url(../images/Kaguyahime.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#MrSandman{
+	background-size: contain;
+	background-image:url(../images/MrSandman.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#Aleshya{
+	background-size: contain;
+	background-image:url(../images/Aleshya.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#Akashiro{
+	background-size: contain;
+	background-image:url(../images/Akashiro.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#SaiAkuto{
+	background-size: contain;
+	background-image:url(../images/SaiAkuto.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#SeimaHiryuu{
+	background-size: contain;
+	background-image:url(../images/SeimaHiryuu.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+/*---STATS---*/
+.stats{
+	background-color: rgba(255,255,255, 0.7);
+	min-height: 200px;
+	width: 0px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 20;
+	color: #FFF;
+	opacity: 0;
+}
+
+.stats p{
+	padding: 3px 0 3px 5px;
+	margin: 3px 0!important;
+	position: relative;
+	white-space: nowrap;
+}
+
+.stats span{
+	opacity: 0;
+}
+
+.stats span:last-child{
+	position: absolute;
+	right: 7px;
+}
+
+.p-atk, .m-atk{
+	background-color: #00aeef;
+}
+
+.crit-chance, .crit-power, .lightcd{
+	background-color: #ee2a7b;
+}
+
+.skill1, .skill2, .skill3{
+	background-color: #7f3f98;
+}
+
+/*HARAMURANODOKA*/
+#HaramuraNodoka .p-atk{
+	width: 85%;
+}
+#HaramuraNodoka .crit-chance{
+	width: 24%;
+}
+#HaramuraNodoka .crit-power{
+	width: 58%;
+}
+#HaramuraNodoka .skill1{
+	width: 92%;
+}
+#HaramuraNodoka .skill2{
+	width: 55%;
+}
+#HaramuraNodoka .skill3{
+	width: 30%;
+}
+
+/*REMILIA*/
+#Remilia .p-atk{
+	width: 84%;
+}
+#Remilia .crit-chance{
+	width: 29%;
+}
+#Remilia .crit-power{
+	width: 62%;
+}
+#Remilia .skill1{
+	width: 49%;
+}
+#Remilia .skill2{
+	width: 36%;
+}
+#Remilia .skill3{
+	width: 94%;
+}
+
+/*KAGUYAHIME*/
+#Kaguyahime .p-atk{
+	width: 85%;
+}
+#Kaguyahime .m-atk{
+	width: 68%;
+}
+#Kaguyahime .skill1{
+	width: 92%;
+	margin-top: 33px!important;
+}
+#Kaguyahime .skill2{
+	width: 30%;
+}
+#Kaguyahime .skill3{
+	width: 44%;
+}
+
+/*MRSANDMAN*/
+#MrSandman .p-atk{
+	width: 80%;
+}
+#MrSandman .crit-chance{
+	width: 51%;
+}
+#MrSandman .crit-power{
+	width: 62%;
+}
+#MrSandman .skill1{
+	width: 63%;
+}
+#MrSandman .skill2{
+	width: 30%;
+}
+#MrSandman .skill3{
+	width: 30%;
+}
+
+/*ALESHYA*/
+#Aleshya .m-atk{
+	width: 80%;
+	margin-bottom: 33px!important;
+}
+#Aleshya .skill1{
+	width: 59%;
+}
+#Aleshya .skill2{
+	width: 30%;
+}
+#Aleshya .skill3{
+	width: 30%;
+}
+#Aleshya .lightcd{
+	width: 50%;
+}
+
+/*AKASHIRO*/
+#Akashiro .p-atk{
+	width: 85%;
+}
+#Akashiro .crit-chance{
+	width: 44%;
+}
+#Akashiro .crit-power{
+	width: 62%;
+}
+#Akashiro .skill1{
+	width: 89%;
+}
+#Akashiro .skill2{
+	width: 52%;
+}
+#Akashiro .skill3{
+	width: 30%;
+}
+
+/*SAIAKUTO*/
+#SaiAkuto .p-atk{
+	width: 84%;
+}
+#SaiAkuto .crit-chance{
+	width: 50%;
+}
+#SaiAkuto .crit-power{
+	width: 68%;
+}
+#SaiAkuto .skill1{
+	width: 40%;
+}
+#SaiAkuto .skill2{
+	width: 59%;
+}
+#SaiAkuto .skill3{
+	width: 30%;
+}
+
+/*SEIMAHIRYUU*/
+#SeimaHiryuu .p-atk{
+	width: 84%;
+}
+#SeimaHiryuu .crit-chance{
+	width: 29%;
+}
+#SeimaHiryuu .crit-power{
+	width: 62%;
+}
+#SeimaHiryuu .skill1{
+	width: 49%;
+}
+#SeimaHiryuu .skill2{
+	width: 30%;
+}
+#SeimaHiryuu .skill3{
+	width: 94%;
+}
+
+/*-----MEDIA-----*/
+#gallery img{
+	width: 150px;
+}
+
+#gallery a img{
+	opacity: 0.5;
+}
+
+#video{
+	margin-bottom: 50px;	
+}
+
+#video sub{
+	font-size: 0.7em;
+}
+
+video{
+	width: 800px;
+}
+
+/*-----FAQ------*/
+#faq h3{
+	color: #7f3f98;
+}
+
+/*-----FOOTER-----*/
+footer{
+	width: 100%;
+	overflow: auto;
+	color: #FFF;
+	background-color: #000;
+}
+
+.pink footer{
+	background-color: #ee2a7b;
+}
+
+.blue footer{
+	background-color: #00aeef;
+}
+
+.purple footer{
+	background-color: #7f3f98;
+}
+
+footer p{
+	width: 1000px;
+	font-size: 0.7em;
+	margin: 3px auto;
+}
