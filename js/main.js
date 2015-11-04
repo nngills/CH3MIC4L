@@ -31,4 +31,16 @@ $(function(){ //Jquery wrapper
 		}
 	});
 	
+	//Sets member avatars
+	var members = $("#members > article");
+	for(i = 0, j = members.length; i < j; i++){
+		id = members[i].id
+		$("#"+id).css({
+			"background-size": "contain"	,
+			"background-image": "url(images/" + id + ".png)",
+			"background-repeat": "no-repeat"	,
+			"background-position": "bottom left"	
+		});
+	}
+	
 });

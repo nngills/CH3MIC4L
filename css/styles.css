@@ -207,62 +207,6 @@ canvas{
 	height: 16px;
 }
 
-#HaramuraNodoka{
-	background-size: contain;
-	background-image:url(../images/HaramuraNodoka.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#Remilia{
-	background-size: contain;
-	background-image:url(../images/Remilia.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#Kaguyahime{
-	background-size: contain;
-	background-image:url(../images/Kaguyahime.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#MrSandman{
-	background-size: contain;
-	background-image:url(../images/MrSandman.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#Aleshya{
-	background-size: contain;
-	background-image:url(../images/Aleshya.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#Akashiro{
-	background-size: contain;
-	background-image:url(../images/Akashiro.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#SaiAkuto{
-	background-size: contain;
-	background-image:url(../images/SaiAkuto.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-#SeimaHiryuu{
-	background-size: contain;
-	background-image:url(../images/SeimaHiryuu.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
 /*---STATS---*/
 .stats{
 	background-color: rgba(255,255,255, 0.7);
