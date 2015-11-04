@@ -82,4 +82,15 @@ $(function(){ //Jquery wrapper
 		}
 	}
 	
+	//SET WEAPON
+	for(i = 0, j = members.length; i < j; i++){
+		//loops through each member
+		//gets tag with weapon
+		//gets only the weapon name and removes whitespace (the png files don't have spaces)
+		//outputs into HTML after the tag
+		weaponHolder = $("#members > article > p:last-of-type");
+		weapon = $(weaponHolder[i]).text().replace('Weapon Class: ','').replace(' ', '');
+		$(weaponHolder[i]).after("<img src='images/"+ weapon +".png' alt='"+ weapon +"'>")
+	}
+	
 });
