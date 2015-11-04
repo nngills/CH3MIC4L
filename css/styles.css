@@ -95,24 +95,26 @@ nav li{
 	text-transform: uppercase;
 }
 
-nav a{
-	text-decoration: none;
-	color: #ee2a7b;
+nav span{
 	background-color: #fff;
 	padding: 7px 0;
-	transition: all 0.2s;
 }
 
-/*-----ANCHORS-----*/
-nav li:hover{
+/*-----ANCHORS----- 18px*/
+
+nav a{
+	padding: 7px 0;
+	transition: padding-left 0.2s;
+	text-decoration: none;
+	color: #ee2a7b;
+}
+
+nav a:hover{
+	padding-left: 18px;
 	background-size: 16px;
 	background-image: url(../images/logo-small.gif);
 	background-repeat: no-repeat;
 	background-position: center left;
-}
-
-nav a:hover{
-	margin-left: 18px;
 }
 
 a:active{
