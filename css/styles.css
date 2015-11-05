@@ -100,7 +100,7 @@ nav span{
 	padding: 7px 0;
 }
 
-/*-----ANCHORS----- 18px*/
+/*-----ANCHORS-----*/
 
 nav a{
 	padding: 7px 0;
@@ -125,7 +125,7 @@ a:active{
 main{
 	width: 800px;
 	float: right;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 main h2{
@@ -292,6 +292,8 @@ footer{
 
 .pink footer{
 	background-color: #ee2a7b;
+	position: absolute;
+	bottom: 0px;
 }
 
 .blue footer{
@@ -307,3 +309,5 @@ footer p{
 	font-size: 0.7em;
 	margin: 3px auto;
 }
+
+/*-----MEDIA QUERIES-----*/
