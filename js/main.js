@@ -22,8 +22,13 @@ $(function(){ //Jquery wrapper
 		//out
 		if(stats.css("opacity") === '0'){
 			$(stats).animate({opacity: 1}, 0)
-			$(stats).animate({width: "600px"}, 500);
 			$(stats).find("span").delay(250).animate({opacity: 1}, 150)
+			
+			if(window.matchMedia('(max-width: 1160px)').matches){
+				$(stats).animate({width: "440px"}, 500);
+			}else{
+				$(stats).animate({width: "600px"}, 500);	
+			}
 		}else{
 		//in
 			$(stats).find("span").animate({opacity: 0}, 150)
@@ -31,6 +36,18 @@ $(function(){ //Jquery wrapper
 			$(stats).animate({opacity: 0}, 0)
 		}
 	});
+	
+	//resizes stats width if window resizes while stats are out
+	$(window).on('resize', function(){
+		stats = $("#members article .stats");
+		
+		if(window.matchMedia('(max-width: 1160px)').matches){
+			stats.css("width", "440px");
+		}else{
+			stats.css("width", "600px");
+		}
+	});
+	
 	
 	//SET MEMBER AVATARS
 	//gets every article in members section

@@ -190,6 +190,10 @@ dd{
 	margin-bottom: 100px;
 }
 
+#members article:last-child{
+	margin-bottom: 50px;
+}
+
 #silverCrownFail img, #goldCrownFail img{
 	position: static!important;
 	height: 16px;
@@ -320,7 +324,73 @@ footer p{
 
 /*-----MEDIA QUERIES-----*/
 @media screen and (min-height: 780px){
+	/*footer won't be in the middle of the page at smaller height settings*/
 	.pink footer{
 		position: absolute;
 		bottom: 0px;	
 	}
+}
+	
+@media screen and (max-width: 1160px){
+	/*makes space in smaller browsers*/
+	/*Stat bar width changes as well (see main.js)*/
+	#container{
+		margin: 0;	
+	}
+}
+
+	
+@media screen and (max-width: 1000px){
+	/*makes nav inline and adjusts header and main*/
+	body{
+	}
+	
+	#container{
+		width: 800px;
+		margin: 0 auto;
+	}
+	
+	/*Head*/
+	header{
+		margin-bottom: 10px;	
+	}
+	
+	header img{	
+		width: 100%;
+		margin: 0;
+	}
+	
+	/*Nav*/
+	aside{
+		width: 100%;
+		float: none;
+		position: static;
+	}
+	
+	nav{
+		margin: 30px 0;	
+		padding: 0 8%;
+	}
+	
+	nav ul{
+		margin: 0;	
+	}
+	
+	nav li{
+		font-size: 1.2em;
+		display:inline;
+		margin: 40px;
+	}
+	
+	/*Main*/
+	main{
+		float: none;
+	}
+	
+	/*footer*/
+	footer p{
+		width: 800px;
+		font-size: 1em;	
+	}
+	
+}
