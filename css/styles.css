@@ -344,9 +344,6 @@ footer p{
 	/*makes nav inline
 	adjusts header and main
 	removes nav animation*/
-	body{
-	}
-	
 	#container{
 		width: 800px;
 		margin: 0 auto;
@@ -381,15 +378,30 @@ footer p{
 	nav li{
 		font-size: 1.2em;
 		display:inline;
-		margin: 40px;
+		margin-left: 14%;
+	}
+	
+	nav li:first-child{
+		margin-left: 0px;
 	}
 	
 	/*Main*/
 	main{
 		float: none;
+		width: 780px;
+		margin: 0 auto 50px;
+	}
+	
+	iframe{
+		width: 780px;
+		height: 438px;
 	}
 	
 	/*footer*/
+	.pink footer{
+		position: static;
+	}
+	
 	footer p{
 		width: 800px;	
 	}
