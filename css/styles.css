@@ -341,7 +341,9 @@ footer p{
 
 	
 @media screen and (max-width: 1000px){
-	/*makes nav inline and adjusts header and main*/
+	/*makes nav inline
+	adjusts header and main
+	removes nav animation*/
 	body{
 	}
 	
@@ -389,8 +391,16 @@ footer p{
 	
 	/*footer*/
 	footer p{
-		width: 800px;
-		font-size: 1em;	
+		width: 800px;	
 	}
 	
+	/*anchors*/
+	nav a{
+		transition: none;
+	}
+	
+	nav a:hover{
+		padding-left: 0px;
+		background-image: none;
+	}	
 }
