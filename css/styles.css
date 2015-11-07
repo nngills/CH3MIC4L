@@ -389,7 +389,7 @@ footer p{
 	main{
 		float: none;
 		width: 780px;
-		margin: 0 auto 50px;
+		margin: 0 auto 50px!important;
 	}
 	
 	iframe{
